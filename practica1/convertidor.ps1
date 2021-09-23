@@ -1,11 +1,12 @@
-﻿Write-Host '|                                   | '
-Write-Host '|                                   | '
-Write-Host '|           Bienvenido/a            | '
-Write-Host '|        al conversor binario,      | '
-Write-Host '|     hexadecimal, decimal y octal. | '
-Write-Host '|                                   | ' 
-Write-Host '|     Por favor, elija una opción:  | '
-Write-Host '|                                   | '
+Write-Host '¦~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¦ '
+Write-Host '¦                                   ¦ '
+Write-Host '¦           Bienvenido/a            ¦ '
+Write-Host '¦        al conversor binario,      ¦ '
+Write-Host '¦     hexadecimal, decimal y octal. ¦ '
+Write-Host '¦                                   ¦ ' 
+Write-Host '¦     Por favor, elija una opción:  ¦ '
+Write-Host '¦                                   ¦ '
+Write-Host '¦~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¦ '
 
 Write-Host ''
 write-host 'Para abrir el conversor de decimal a binario, pulse 1.'
@@ -13,10 +14,10 @@ write-host 'Para abrir el conversor de binario a decimal, pulse 2.'
 write-host 'Para abrir el conversor de hexadecimal a decimal, pulse 3.'
 write-host 'Para abrir el conversor de decimal a hexadecimal, pulse 4.'
 Write-Host 'Para abrir el conversor de octal a decimal, pulse 5.'
-Write-Host 'Para abrir el conversor de decimal a octal , pulse 6'
-Write-Host 'Para abrir el conversor de binario a octal, pulse 7'
-Write-Host 'Para abrir el conversor de binario a hexadecimal, pulse 8'
-Write-Host 'Para abrir el conversor de hexadecimal a binario, pulse 9'
+Write-Host 'Para abrir el conversor de decimal a octal , pulse 6.'
+Write-Host 'Para abrir el conversor de binario a octal, pulse 7.'
+Write-Host 'Para abrir el conversor de binario a hexadecimal, pulse 8.'
+Write-Host 'Para abrir el conversor de hexadecimal a binario, pulse 9.'
 Write-Host ''
 
 $converter = read-host 'Escribe el número: '
@@ -85,6 +86,7 @@ elseif($converter -eq 8){ 2to16 }
 elseif($converter -eq 9){ 16to2 }
 
 elseif($converter -ne 1, 2, 3, 4, 5, 6, 7, 8, 9){
+
+Write-Host 'Ese número no es una opción. Por favor, vuelva a ejecutar el programa y escriba un número válido'
 return
 }
-
